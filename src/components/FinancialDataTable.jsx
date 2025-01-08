@@ -51,7 +51,7 @@ const FinancialDataTable = () => {
   }
 
   return (
-    <div className="container mx-auto lg:mx-12 px-4 pt-12 dark:bg-gray-900">
+    <div className="container mx-auto lg:px-24 px-4 pt-12 dark:bg-gray-900">
       <h1 className="text-xl font-bold mb-4 dark:text-white">Apple Inc. Income Statement</h1>
       <Table data={data} />
     </div>
