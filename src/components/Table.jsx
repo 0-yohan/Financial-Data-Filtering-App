@@ -72,11 +72,25 @@ const Table = ({ data }) => {
   const filterAndSortData = () => {
     let result = [...data];
 
-    if (filters.startYear && filters.endYear) {
+    // if (filters.startYear && filters.endYear) {
+    //   result = result.filter((item) => {
+    //     const itemYear = parseInt(item.date.split('-')[0]);
+    //     return itemYear >= parseInt(filters.startYear) && itemYear <= parseInt(filters.endYear);
+    //   });
+    // }
+
+    if (filters.startYear) {
       result = result.filter((item) => {
         const itemYear = parseInt(item.date.split('-')[0]);
-        return itemYear >= parseInt(filters.startYear) && itemYear <= parseInt(filters.endYear);
-      });
+        return itemYear >= parseInt(filters.startYear);
+    });
+    }
+
+    if (filters.endYear) {
+      result = result.filter((item) => {
+        const itemYear = parseInt(item.date.split('-')[0]);
+        return itemYear <= parseInt(filters.endYear);
+        });
     }
 
     if (filters.minRevenue) {
