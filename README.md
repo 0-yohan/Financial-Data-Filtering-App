@@ -37,8 +37,8 @@ This React application fetches and displays annual income statements for Apple I
 
 1. Clone the repository: 
 ```
-git clone [https://github.com/your-username/apple-financial-analyzer.git](https://github.com/your-username/apple-financial-analyzer.git)
-cd apple-financial-analyzer
+git clone https://github.com/0-yohan/Financial-Data-Filtering-App.git
+cd Financial-Data-Filtering-App
 ```
 2. Install dependencies:
 ```
@@ -46,7 +46,7 @@ npm install
 ```
 3. Create a `.env.local` file in the root directory and add your Financial Modeling Prep API key:
 ```
-API_KEY = <your api key>
+REACT_APP_API_KEY=<your api key>
 (visit https://financialmodelingprep.com/developer/docs/ and sign up to get a free key)
 ```
 4. Start the application:
