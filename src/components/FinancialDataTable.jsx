@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Table from './Table';
 
-// const API_URL = `https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${process.env.REACT_APP_API_KEY}`;
+const API_URL = `https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${process.env.REACT_APP_API_KEY}`;
 
 
 // Github raw json api for testing
-const API_URL = 'https://raw.githubusercontent.com/0-yohan/data-repo/refs/heads/main/apple%20income%20statement.json';
+// const API_URL = 'https://raw.githubusercontent.com/0-yohan/data-repo/refs/heads/main/apple%20income%20statement.json';
 
 const FinancialDataTable = () => {
   const [data, setData] = useState([]);
